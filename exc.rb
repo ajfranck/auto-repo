@@ -1,7 +1,7 @@
 require 'date'
 
 # Path of the directory to push
-directory_path = "
+directory_path = "/Users/1amaj/Desktop/Github/auto-repo/auto-repo"
 
 # Name of the file to modify
 file_path = "#{directory_path}/example#{Date.today}.txt"
@@ -22,8 +22,8 @@ commit_command = "git -C #{directory_path} commit -m 'Automatic modification'"
 push_command = "git -C #{directory_path} push origin main"
 
 # Define your GitHub username and personal access token
-username = "YourGitHubUsername"  # <===== CHANGE HERE
-access_token = "YourPersonalAccessToken"  # <===== CHANGE HERE
+username = "ajfranck"  # <===== CHANGE HERE
+access_token = "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"  # <===== CHANGE HERE
 
 # Configuring authentication for Git commands
 auth_command = "git -C #{directory_path} config credential.helper 'store --file=.git/credentials' && echo 'https://#{username}:#{access_token}@github.com' >> .git/credentials"
